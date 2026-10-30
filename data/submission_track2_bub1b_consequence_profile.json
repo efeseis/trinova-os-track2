@@ -1,0 +1,63 @@
+{
+  "framework": "TRINOVA.OS",
+  "track": "TRACK_2",
+  "module": "CONSEQUENCE_AWARE_DRUG_REPURPOSING",
+  "status": "RESEARCH_HYPOTHESIS_GENERATION",
+  "gene": "BUB1B",
+  "molecular_profile": {
+    "gene": "BUB1B",
+    "gene_symbol": "BUB1B",
+    "chromosome": "15",
+    "loF_hypothesis": true,
+    "functional_variants": [
+      {
+        "pos": "40209701",
+        "ref": "T",
+        "alt": "G",
+        "gt": "0/1",
+        "dp": 46,
+        "gq": 99,
+        "ref_match_fasta": true,
+        "region": "CDS",
+        "consequence": "STOP_GAINED",
+        "protein_change": "L>*"
+      },
+      {
+        "pos": "40220612",
+        "ref": "T",
+        "alt": "G",
+        "gt": "0/1",
+        "dp": 28,
+        "gq": 99,
+        "ref_match_fasta": true,
+        "region": "CDS",
+        "consequence": "MISSENSE",
+        "protein_change": "N>K"
+      }
+    ],
+    "mechanistic_axes": {
+      "MITOTIC_CHECKPOINT": 12.5,
+      "CHROMOSOME_SEGREGATION": 11.281,
+      "MICROTUBULE_MITOSIS": 10.688,
+      "CELL_CYCLE": 7.5,
+      "APOPTOSIS": 2.5,
+      "DNA_REPLICATION_STRESS": 0.625
+    },
+    "phase": "INDETERMINATE",
+    "phase_supported": false
+  },
+  "chr15_provenance": {
+    "available": true,
+    "records": 140405
+  },
+  "interpretation": "A BUB1B STOP_GAINED variant with FASTA-confirmed reference is used as a high-confidence molecular anchor for a loss-of-function hypothesis. A second missense coding variant is retained as secondary evidence. Phase between the coding variants is not assumed without explicit evidence. Drug ranking is therefore based on mechanistic compatibility rather than claimed causality.",
+  "limitations": [
+    "Entropy is a prioritization/navigation heuristic.",
+    "The BUB1B STOP_GAINED annotation supports a loss-of-function hypothesis but does not by itself prove clinical causality.",
+    "The missense variant is not assumed pathogenic.",
+    "No compound heterozygosity is claimed without adequate phase evidence.",
+    "Drug ranking does not establish efficacy.",
+    "Phase information is contextual and does not independently establish current regulatory approval.",
+    "Broad Repurposing Hub annotations are treated as mechanistic evidence for prioritization, not as clinical recommendations."
+  ]
+}

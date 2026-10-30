@@ -1,0 +1,7 @@
+# .gitignore
+*.vcf
+*.bam
+*.cram
+data/raw/
+__pycache__/
+.ipynb_checkpoints/

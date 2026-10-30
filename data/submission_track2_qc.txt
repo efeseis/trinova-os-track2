@@ -1,0 +1,16 @@
+TRINOVA.OS — TRACK 2 QC
+============================================================
+Original Broad records: 7,423
+Final unique compounds: 7,423
+Reduction after deduplication: 0.00%
+
+Final score min: 0.500
+Final score max: 22.500
+Mechanistic score min: 0.000
+Mechanistic score max: 19.250
+
+SCORING PRINCIPLE:
+Mechanistic relevance > clinical phase > metadata quality
+
+SCIENTIFIC LIMITATION:
+No ranking value should be interpreted as a probability of efficacy.

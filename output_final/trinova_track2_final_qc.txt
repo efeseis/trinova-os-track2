@@ -1,0 +1,37 @@
+TRINOVA.OS TRACK 2 — FINAL CANDIDATE QC
+====================================================================================
+Profile used: C:\Users\ericr\Desktop\trinova-os-track2-main\data\submission_track2_bub1b_consequence_profile.json
+Broad records after filtering/deduplication: 7,423
+Mechanism resolved by text rules: 177
+Mechanism unresolved: 7,246
+Repurposing shortlist size: 7
+Discovery set size: 20
+Mechanistic clusters: 7
+Complementary-coverage hypotheses: 20
+All molecular relevance values identical/undiscriminating: False
+
+Mechanism counts:
+  UNRESOLVED: 7246
+  CELL_CYCLE: 69
+  AURORA_PLK_MITOSIS: 47
+  APOPTOSIS: 21
+  MICROTUBULE_MITOSIS: 17
+  DNA_REPLICATION_STRESS: 11
+  CHROMOSOME_SEGREGATION: 7
+  MPS1_TTK_SAC: 5
+
+Development contexts:
+  LAUNCHED_DATASET: 2674
+  PRECLINICAL: 2345
+  PHASE_2: 999
+  PHASE_1: 643
+  PHASE_3: 545
+  UNRESOLVED: 217
+
+QC cautions:
+- Text matching may miss synonyms and may produce ambiguous matches.
+- Rule-match confidence is not experimental evidence.
+- Development context is inherited from the input catalogue and was not independently verified.
+- Min-max scores depend on catalogue composition.
+- No efficacy, causality, safety, or synergy claims are generated.
+- No current approval is inferred from Broad 'Launched' labels.

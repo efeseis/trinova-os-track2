@@ -1,0 +1,568 @@
+{
+  "framework": "TRINOVA.OS",
+  "track": "TRACK_2",
+  "module": "MOLECULAR_VULNERABILITY_AND_DRUG_REPURPOSING",
+  "version": "FINAL_CANDIDATE_1.0",
+  "status": "RESEARCH_HYPOTHESIS_GENERATION",
+  "profile_source": "C:\\Users\\ericr\\Desktop\\trinova-os-track2-main\\data\\submission_track2_bub1b_consequence_profile.json",
+  "gene": "BUB1B",
+  "molecular_profile": {
+    "loF_hypothesis": true,
+    "functional_variants_count": 2,
+    "stop_gained_count": 1,
+    "missense_count": 1,
+    "frameshift_count": 0,
+    "splice_count": 0,
+    "heuristic_molecular_support_index": 1.0,
+    "phase": "INDETERMINATE",
+    "phase_supported": false,
+    "phase_uncertainty_factor": 0.9
+  },
+  "mechanistic_axes": {
+    "MITOTIC_CHECKPOINT": 12.5,
+    "CHROMOSOME_SEGREGATION": 11.281,
+    "MICROTUBULE_MITOSIS": 10.688,
+    "CELL_CYCLE": 7.5,
+    "APOPTOSIS": 2.5,
+    "DNA_REPLICATION_STRESS": 0.625
+  },
+  "scoring": {
+    "priority_score_formula": "0.70 * molecular_relevance_norm + 0.30 * development_score",
+    "molecular_relevance_normalization": "min-max relative to the loaded Broad catalogue",
+    "axis_weights": {
+      "MITOTIC_CHECKPOINT": 1.0,
+      "CHROMOSOME_SEGREGATION": 0.9,
+      "MICROTUBULE_MITOSIS": 0.85,
+      "CELL_CYCLE": 0.6,
+      "APOPTOSIS": 0.2,
+      "DNA_REPLICATION_STRESS": 0.1
+    },
+    "development_scores": {
+      "APPROVAL_CONTEXT": 1.0,
+      "LAUNCHED_DATASET": 0.95,
+      "PHASE_4": 0.9,
+      "PHASE_3": 0.8,
+      "PHASE_2": 0.65,
+      "PHASE_1": 0.45,
+      "PRECLINICAL": 0.2,
+      "DISCOVERY": 0.1,
+      "UNRESOLVED": 0.0
+    },
+    "note": "Weights and thresholds are heuristic and not clinically calibrated."
+  },
+  "mechanistic_clusters": [
+    {
+      "mechanistic_rank": 1,
+      "cluster": "AURORA_PLK_MITOSIS",
+      "label": "Aurora/PLK mitotic regulation",
+      "axis": "MITOTIC_CHECKPOINT",
+      "compounds": 47,
+      "max_molecular_relevance": 11.25,
+      "max_development_score": 0.95,
+      "cluster_score": 0.9849999999999999
+    },
+    {
+      "mechanistic_rank": 2,
+      "cluster": "MPS1_TTK_SAC",
+      "label": "MPS1/TTK spindle assembly checkpoint",
+      "axis": "MITOTIC_CHECKPOINT",
+      "compounds": 5,
+      "max_molecular_relevance": 11.25,
+      "max_development_score": 0.2,
+      "cluster_score": 0.76
+    },
+    {
+      "mechanistic_rank": 3,
+      "cluster": "MICROTUBULE_MITOSIS",
+      "label": "Microtubule / mitotic spindle",
+      "axis": "MICROTUBULE_MITOSIS",
+      "compounds": 17,
+      "max_molecular_relevance": 5.698895039999999,
+      "max_development_score": 0.95,
+      "cluster_score": 0.637862224723618
+    },
+    {
+      "mechanistic_rank": 4,
+      "cluster": "CHROMOSOME_SEGREGATION",
+      "label": "Chromosome segregation / kinetochore",
+      "axis": "CHROMOSOME_SEGREGATION",
+      "compounds": 7,
+      "max_molecular_relevance": 6.36891417,
+      "max_development_score": 0.8,
+      "cluster_score": 0.6347618018090452
+    },
+    {
+      "mechanistic_rank": 5,
+      "cluster": "CELL_CYCLE",
+      "label": "Cell-cycle regulation",
+      "axis": "CELL_CYCLE",
+      "compounds": 69,
+      "max_molecular_relevance": 4.05,
+      "max_development_score": 0.95,
+      "cluster_score": 0.5347487437185929
+    },
+    {
+      "mechanistic_rank": 6,
+      "cluster": "APOPTOSIS",
+      "label": "Apoptosis / programmed cell death",
+      "axis": "APOPTOSIS",
+      "compounds": 21,
+      "max_molecular_relevance": 0.45,
+      "max_development_score": 0.95,
+      "cluster_score": 0.3096231155778894
+    },
+    {
+      "mechanistic_rank": 7,
+      "cluster": "DNA_REPLICATION_STRESS",
+      "label": "DNA replication / replication stress",
+      "axis": "DNA_REPLICATION_STRESS",
+      "compounds": 11,
+      "max_molecular_relevance": 0.05625,
+      "max_development_score": 0.8,
+      "cluster_score": 0.24
+    }
+  ],
+  "repurposing_shortlist": [
+    {
+      "name_norm": "hesperidin",
+      "cluster": "AURORA_PLK_MITOSIS",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.9849999999999999,
+      "priority_class": "HIGH_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "cabazitaxel",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.6395979135999998,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "carbendazim",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.6395979135999998,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "colchicine",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.6395979135999998,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "abemaciclib",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.5369999999999999,
+      "priority_class": "LOWER_PRIORITY"
+    },
+    {
+      "name_norm": "bosutinib",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.5369999999999999,
+      "priority_class": "LOWER_PRIORITY"
+    },
+    {
+      "name_norm": "palbociclib",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "LAUNCHED_DATASET",
+      "priority_score": 0.5369999999999999,
+      "priority_class": "LOWER_PRIORITY"
+    }
+  ],
+  "discovery_set": [
+    {
+      "name_norm": "alisertib",
+      "cluster": "AURORA_PLK_MITOSIS",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PHASE_3",
+      "priority_score": 0.94,
+      "priority_class": "HIGH_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "barasertib",
+      "cluster": "AURORA_PLK_MITOSIS",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PHASE_3",
+      "priority_score": 0.94,
+      "priority_class": "HIGH_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "barasertib-hqpa",
+      "cluster": "AURORA_PLK_MITOSIS",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PHASE_3",
+      "priority_score": 0.94,
+      "priority_class": "HIGH_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "orantinib",
+      "cluster": "AURORA_PLK_MITOSIS",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PHASE_3",
+      "priority_score": 0.94,
+      "priority_class": "HIGH_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "mpi-0479605",
+      "cluster": "MPS1_TTK_SAC",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PRECLINICAL",
+      "priority_score": 0.76,
+      "priority_class": "HIGH_MECHANISTIC_RELEVANCE"
+    },
+    {
+      "name_norm": "mps-bay-2a",
+      "cluster": "MPS1_TTK_SAC",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PRECLINICAL",
+      "priority_score": 0.76,
+      "priority_class": "HIGH_MECHANISTIC_RELEVANCE"
+    },
+    {
+      "name_norm": "mps1-in-1",
+      "cluster": "MPS1_TTK_SAC",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PRECLINICAL",
+      "priority_score": 0.76,
+      "priority_class": "HIGH_MECHANISTIC_RELEVANCE"
+    },
+    {
+      "name_norm": "pyrazolanthrone",
+      "cluster": "MPS1_TTK_SAC",
+      "axis": "MITOTIC_CHECKPOINT",
+      "molecular_relevance": 11.25,
+      "development_context": "PRECLINICAL",
+      "priority_score": 0.76,
+      "priority_class": "HIGH_MECHANISTIC_RELEVANCE"
+    },
+    {
+      "name_norm": "filanesib",
+      "cluster": "CHROMOSOME_SEGREGATION",
+      "axis": "CHROMOSOME_SEGREGATION",
+      "molecular_relevance": 6.36891417,
+      "development_context": "PHASE_3",
+      "priority_score": 0.6362879927999999,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "ispinesib",
+      "cluster": "CHROMOSOME_SEGREGATION",
+      "axis": "CHROMOSOME_SEGREGATION",
+      "molecular_relevance": 6.36891417,
+      "development_context": "PHASE_2",
+      "priority_score": 0.5912879927999999,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "brd9876",
+      "cluster": "CHROMOSOME_SEGREGATION",
+      "axis": "CHROMOSOME_SEGREGATION",
+      "molecular_relevance": 6.36891417,
+      "development_context": "PRECLINICAL",
+      "priority_score": 0.45628799279999993,
+      "priority_class": "MODERATE_MECHANISTIC_RELEVANCE"
+    },
+    {
+      "name_norm": "btb1",
+      "cluster": "CHROMOSOME_SEGREGATION",
+      "axis": "CHROMOSOME_SEGREGATION",
+      "molecular_relevance": 6.36891417,
+      "development_context": "PRECLINICAL",
+      "priority_score": 0.45628799279999993,
+      "priority_class": "MODERATE_MECHANISTIC_RELEVANCE"
+    },
+    {
+      "name_norm": "cytochalasin-b",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "PHASE_2",
+      "priority_score": 0.5495979136,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "mertansine",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "PHASE_2",
+      "priority_score": 0.5495979136,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "mivobulin",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "PHASE_2",
+      "priority_score": 0.5495979136,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "soblidotin",
+      "cluster": "MICROTUBULE_MITOSIS",
+      "axis": "MICROTUBULE_MITOSIS",
+      "molecular_relevance": 5.698895039999999,
+      "development_context": "PHASE_2",
+      "priority_score": 0.5495979136,
+      "priority_class": "MODERATE_REPURPOSING_RELEVANCE"
+    },
+    {
+      "name_norm": "dinaciclib",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "PHASE_3",
+      "priority_score": 0.492,
+      "priority_class": "LOWER_PRIORITY"
+    },
+    {
+      "name_norm": "indirubin",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "PHASE_3",
+      "priority_score": 0.492,
+      "priority_class": "LOWER_PRIORITY"
+    },
+    {
+      "name_norm": "alvocidib",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "PHASE_2",
+      "priority_score": 0.447,
+      "priority_class": "LOWER_PRIORITY"
+    },
+    {
+      "name_norm": "at-7519",
+      "cluster": "CELL_CYCLE",
+      "axis": "CELL_CYCLE",
+      "molecular_relevance": 4.05,
+      "development_context": "PHASE_2",
+      "priority_score": 0.447,
+      "priority_class": "LOWER_PRIORITY"
+    }
+  ],
+  "combination_hypotheses": [
+    {
+      "cluster_a": "AURORA_PLK_MITOSIS",
+      "cluster_b": "CHROMOSOME_SEGREGATION",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "CHROMOSOME_SEGREGATION",
+      "mechanistic_coverage": 22.652900000000002,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MPS1_TTK_SAC",
+      "cluster_b": "CHROMOSOME_SEGREGATION",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "CHROMOSOME_SEGREGATION",
+      "mechanistic_coverage": 22.652900000000002,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MPS1_TTK_SAC",
+      "cluster_b": "MICROTUBULE_MITOSIS",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "MICROTUBULE_MITOSIS",
+      "mechanistic_coverage": 21.5848,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "AURORA_PLK_MITOSIS",
+      "cluster_b": "MICROTUBULE_MITOSIS",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "MICROTUBULE_MITOSIS",
+      "mechanistic_coverage": 21.5848,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MICROTUBULE_MITOSIS",
+      "cluster_b": "CHROMOSOME_SEGREGATION",
+      "axis_a": "MICROTUBULE_MITOSIS",
+      "axis_b": "CHROMOSOME_SEGREGATION",
+      "mechanistic_coverage": 19.2377,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "AURORA_PLK_MITOSIS",
+      "cluster_b": "CELL_CYCLE",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "CELL_CYCLE",
+      "mechanistic_coverage": 17.0,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MPS1_TTK_SAC",
+      "cluster_b": "CELL_CYCLE",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "CELL_CYCLE",
+      "mechanistic_coverage": 17.0,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "CHROMOSOME_SEGREGATION",
+      "cluster_b": "CELL_CYCLE",
+      "axis_a": "CHROMOSOME_SEGREGATION",
+      "axis_b": "CELL_CYCLE",
+      "mechanistic_coverage": 14.6529,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MICROTUBULE_MITOSIS",
+      "cluster_b": "CELL_CYCLE",
+      "axis_a": "MICROTUBULE_MITOSIS",
+      "axis_b": "CELL_CYCLE",
+      "mechanistic_coverage": 13.5848,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "AURORA_PLK_MITOSIS",
+      "cluster_b": "APOPTOSIS",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "APOPTOSIS",
+      "mechanistic_coverage": 13.0,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MPS1_TTK_SAC",
+      "cluster_b": "APOPTOSIS",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "APOPTOSIS",
+      "mechanistic_coverage": 13.0,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "AURORA_PLK_MITOSIS",
+      "cluster_b": "DNA_REPLICATION_STRESS",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "DNA_REPLICATION_STRESS",
+      "mechanistic_coverage": 12.5625,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MPS1_TTK_SAC",
+      "cluster_b": "DNA_REPLICATION_STRESS",
+      "axis_a": "MITOTIC_CHECKPOINT",
+      "axis_b": "DNA_REPLICATION_STRESS",
+      "mechanistic_coverage": 12.5625,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "CHROMOSOME_SEGREGATION",
+      "cluster_b": "APOPTOSIS",
+      "axis_a": "CHROMOSOME_SEGREGATION",
+      "axis_b": "APOPTOSIS",
+      "mechanistic_coverage": 10.6529,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "CHROMOSOME_SEGREGATION",
+      "cluster_b": "DNA_REPLICATION_STRESS",
+      "axis_a": "CHROMOSOME_SEGREGATION",
+      "axis_b": "DNA_REPLICATION_STRESS",
+      "mechanistic_coverage": 10.2154,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MICROTUBULE_MITOSIS",
+      "cluster_b": "APOPTOSIS",
+      "axis_a": "MICROTUBULE_MITOSIS",
+      "axis_b": "APOPTOSIS",
+      "mechanistic_coverage": 9.5848,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "MICROTUBULE_MITOSIS",
+      "cluster_b": "DNA_REPLICATION_STRESS",
+      "axis_a": "MICROTUBULE_MITOSIS",
+      "axis_b": "DNA_REPLICATION_STRESS",
+      "mechanistic_coverage": 9.1473,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "CELL_CYCLE",
+      "cluster_b": "APOPTOSIS",
+      "axis_a": "CELL_CYCLE",
+      "axis_b": "APOPTOSIS",
+      "mechanistic_coverage": 5.0,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "CELL_CYCLE",
+      "cluster_b": "DNA_REPLICATION_STRESS",
+      "axis_a": "CELL_CYCLE",
+      "axis_b": "DNA_REPLICATION_STRESS",
+      "mechanistic_coverage": 4.5625,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    },
+    {
+      "cluster_a": "APOPTOSIS",
+      "cluster_b": "DNA_REPLICATION_STRESS",
+      "axis_a": "APOPTOSIS",
+      "axis_b": "DNA_REPLICATION_STRESS",
+      "mechanistic_coverage": 0.5625,
+      "hypothesis_type": "COMPLEMENTARY_MECHANISTIC_COVERAGE",
+      "interpretation": "Mechanistic coverage hypothesis for experimental evaluation. This is not a drug-pair recommendation and does not establish synergy, efficacy, safety, or clinical suitability."
+    }
+  ],
+  "limitations": [
+    "The molecular-support index is a transparent prioritization heuristic, not a pathogenicity score.",
+    "A STOP_GAINED annotation alone does not prove clinical causality.",
+    "A missense annotation is not assumed pathogenic.",
+    "No compound heterozygosity in trans is inferred without adequate phase evidence.",
+    "Mechanistic relevance does not establish therapeutic efficacy or patient benefit.",
+    "Broad LAUNCHED labels are dataset context, not proof of current regulatory approval.",
+    "Min-max molecular relevance is relative to the loaded catalogue and may change with dataset composition.",
+    "Rule-match labels describe text matching, not experimentally validated confidence.",
+    "Discovery and repurposing candidates are separated by dataset development-context labels, which require source verification.",
+    "Complementary-coverage hypotheses do not identify validated drug combinations or establish synergy.",
+    "Potential inhibition of mitotic pathways could be ineffective or harmful; experimental evidence and safety must be assessed independently.",
+    "All outputs are research hypotheses requiring orthogonal biological, pharmacological, and regulatory validation."
+  ]
+}

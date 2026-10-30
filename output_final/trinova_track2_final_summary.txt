@@ -1,0 +1,92 @@
+TRINOVA.OS — TRACK 2 — FINAL CANDIDATE 1.0
+BUB1B → MOLECULAR VULNERABILITY → DRUG REPURPOSING
+====================================================================================
+
+Profile source: C:\Users\ericr\Desktop\trinova-os-track2-main\data\submission_track2_bub1b_consequence_profile.json
+Gene: BUB1B
+Declared LoF hypothesis: True
+Functional variants recorded: 2
+STOP_GAINED: 1
+MISSENSE: 1
+FRAMESHIFT: 0
+SPLICE: 0
+Phase: INDETERMINATE
+Phase supported: False
+Heuristic molecular-support index: 1.000
+Phase uncertainty factor: 0.90
+
+INTERPRETATION LIMIT
+------------------------------------------------------------------------------------
+Scores prioritize research hypotheses. They do not estimate probability of clinical benefit, demonstrate drug efficacy, establish causal disease mechanism, or determine patient suitability.
+
+MECHANISTIC CLUSTERS
+------------------------------------------------------------------------------------
+ 1. AURORA_PLK_MITOSIS | Aurora/PLK mitotic regulation | axis=MITOTIC_CHECKPOINT | compounds=47 | score=0.9850
+ 2. MPS1_TTK_SAC | MPS1/TTK spindle assembly checkpoint | axis=MITOTIC_CHECKPOINT | compounds=5 | score=0.7600
+ 3. MICROTUBULE_MITOSIS | Microtubule / mitotic spindle | axis=MICROTUBULE_MITOSIS | compounds=17 | score=0.6379
+ 4. CHROMOSOME_SEGREGATION | Chromosome segregation / kinetochore | axis=CHROMOSOME_SEGREGATION | compounds=7 | score=0.6348
+ 5. CELL_CYCLE | Cell-cycle regulation | axis=CELL_CYCLE | compounds=69 | score=0.5347
+ 6. APOPTOSIS | Apoptosis / programmed cell death | axis=APOPTOSIS | compounds=21 | score=0.3096
+ 7. DNA_REPLICATION_STRESS | DNA replication / replication stress | axis=DNA_REPLICATION_STRESS | compounds=11 | score=0.2400
+
+REPURPOSING SHORTLIST
+------------------------------------------------------------------------------------
+ 1. hesperidin | AURORA_PLK_MITOSIS | MITOTIC_CHECKPOINT | molecular=11.250 | context=LAUNCHED_DATASET | priority=0.9850
+ 2. cabazitaxel | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | molecular=5.699 | context=LAUNCHED_DATASET | priority=0.6396
+ 3. carbendazim | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | molecular=5.699 | context=LAUNCHED_DATASET | priority=0.6396
+ 4. colchicine | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | molecular=5.699 | context=LAUNCHED_DATASET | priority=0.6396
+ 5. abemaciclib | CELL_CYCLE | CELL_CYCLE | molecular=4.050 | context=LAUNCHED_DATASET | priority=0.5370
+ 6. bosutinib | CELL_CYCLE | CELL_CYCLE | molecular=4.050 | context=LAUNCHED_DATASET | priority=0.5370
+ 7. palbociclib | CELL_CYCLE | CELL_CYCLE | molecular=4.050 | context=LAUNCHED_DATASET | priority=0.5370
+
+DISCOVERY SET
+------------------------------------------------------------------------------------
+ 1. alisertib | AURORA_PLK_MITOSIS | MITOTIC_CHECKPOINT | context=PHASE_3 | molecular=11.250
+ 2. barasertib | AURORA_PLK_MITOSIS | MITOTIC_CHECKPOINT | context=PHASE_3 | molecular=11.250
+ 3. barasertib-hqpa | AURORA_PLK_MITOSIS | MITOTIC_CHECKPOINT | context=PHASE_3 | molecular=11.250
+ 4. orantinib | AURORA_PLK_MITOSIS | MITOTIC_CHECKPOINT | context=PHASE_3 | molecular=11.250
+ 5. mpi-0479605 | MPS1_TTK_SAC | MITOTIC_CHECKPOINT | context=PRECLINICAL | molecular=11.250
+ 6. mps-bay-2a | MPS1_TTK_SAC | MITOTIC_CHECKPOINT | context=PRECLINICAL | molecular=11.250
+ 7. mps1-in-1 | MPS1_TTK_SAC | MITOTIC_CHECKPOINT | context=PRECLINICAL | molecular=11.250
+ 8. pyrazolanthrone | MPS1_TTK_SAC | MITOTIC_CHECKPOINT | context=PRECLINICAL | molecular=11.250
+ 9. filanesib | CHROMOSOME_SEGREGATION | CHROMOSOME_SEGREGATION | context=PHASE_3 | molecular=6.369
+10. ispinesib | CHROMOSOME_SEGREGATION | CHROMOSOME_SEGREGATION | context=PHASE_2 | molecular=6.369
+11. brd9876 | CHROMOSOME_SEGREGATION | CHROMOSOME_SEGREGATION | context=PRECLINICAL | molecular=6.369
+12. btb1 | CHROMOSOME_SEGREGATION | CHROMOSOME_SEGREGATION | context=PRECLINICAL | molecular=6.369
+13. cytochalasin-b | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | context=PHASE_2 | molecular=5.699
+14. mertansine | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | context=PHASE_2 | molecular=5.699
+15. mivobulin | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | context=PHASE_2 | molecular=5.699
+16. soblidotin | MICROTUBULE_MITOSIS | MICROTUBULE_MITOSIS | context=PHASE_2 | molecular=5.699
+17. dinaciclib | CELL_CYCLE | CELL_CYCLE | context=PHASE_3 | molecular=4.050
+18. indirubin | CELL_CYCLE | CELL_CYCLE | context=PHASE_3 | molecular=4.050
+19. alvocidib | CELL_CYCLE | CELL_CYCLE | context=PHASE_2 | molecular=4.050
+20. at-7519 | CELL_CYCLE | CELL_CYCLE | context=PHASE_2 | molecular=4.050
+
+COMPLEMENTARY-COVERAGE HYPOTHESES
+------------------------------------------------------------------------------------
+AURORA_PLK_MITOSIS + CHROMOSOME_SEGREGATION | coverage=22.653 | not evidence of synergy
+MPS1_TTK_SAC + CHROMOSOME_SEGREGATION | coverage=22.653 | not evidence of synergy
+MPS1_TTK_SAC + MICROTUBULE_MITOSIS | coverage=21.585 | not evidence of synergy
+AURORA_PLK_MITOSIS + MICROTUBULE_MITOSIS | coverage=21.585 | not evidence of synergy
+MICROTUBULE_MITOSIS + CHROMOSOME_SEGREGATION | coverage=19.238 | not evidence of synergy
+AURORA_PLK_MITOSIS + CELL_CYCLE | coverage=17.000 | not evidence of synergy
+MPS1_TTK_SAC + CELL_CYCLE | coverage=17.000 | not evidence of synergy
+CHROMOSOME_SEGREGATION + CELL_CYCLE | coverage=14.653 | not evidence of synergy
+MICROTUBULE_MITOSIS + CELL_CYCLE | coverage=13.585 | not evidence of synergy
+AURORA_PLK_MITOSIS + APOPTOSIS | coverage=13.000 | not evidence of synergy
+MPS1_TTK_SAC + APOPTOSIS | coverage=13.000 | not evidence of synergy
+AURORA_PLK_MITOSIS + DNA_REPLICATION_STRESS | coverage=12.562 | not evidence of synergy
+MPS1_TTK_SAC + DNA_REPLICATION_STRESS | coverage=12.562 | not evidence of synergy
+CHROMOSOME_SEGREGATION + APOPTOSIS | coverage=10.653 | not evidence of synergy
+CHROMOSOME_SEGREGATION + DNA_REPLICATION_STRESS | coverage=10.215 | not evidence of synergy
+MICROTUBULE_MITOSIS + APOPTOSIS | coverage=9.585 | not evidence of synergy
+MICROTUBULE_MITOSIS + DNA_REPLICATION_STRESS | coverage=9.147 | not evidence of synergy
+CELL_CYCLE + APOPTOSIS | coverage=5.000 | not evidence of synergy
+CELL_CYCLE + DNA_REPLICATION_STRESS | coverage=4.562 | not evidence of synergy
+APOPTOSIS + DNA_REPLICATION_STRESS | coverage=0.562 | not evidence of synergy
+
+SCORING
+------------------------------------------------------------------------------------
+priority_score = 0.70 * molecular_relevance_norm + 0.30 * development_score
+Molecular relevance is min-max normalized within the loaded Broad catalogue.
+A rule match is a text-based association, not a validated biological mechanism.

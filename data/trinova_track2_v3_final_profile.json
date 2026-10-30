@@ -1,0 +1,315 @@
+{
+  "framework": "TRINOVA.OS",
+  "track": "TRACK_2",
+  "module": "FINAL_REPURPOSING_SHORTLIST_V3",
+  "status": "RESEARCH_HYPOTHESIS_GENERATION",
+  "gene": "BUB1B",
+  "molecular_anchor": {
+    "loF_hypothesis": true,
+    "functional_variants": [
+      {
+        "pos": "40209701",
+        "ref": "T",
+        "alt": "G",
+        "gt": "0/1",
+        "dp": 46,
+        "gq": 99,
+        "ref_match_fasta": true,
+        "region": "CDS",
+        "consequence": "STOP_GAINED",
+        "protein_change": "L>*"
+      },
+      {
+        "pos": "40220612",
+        "ref": "T",
+        "alt": "G",
+        "gt": "0/1",
+        "dp": 28,
+        "gq": 99,
+        "ref_match_fasta": true,
+        "region": "CDS",
+        "consequence": "MISSENSE",
+        "protein_change": "N>K"
+      }
+    ],
+    "phase": "INDETERMINATE",
+    "phase_supported": false
+  },
+  "mechanistic_axes": {
+    "MITOTIC_CHECKPOINT": 12.5,
+    "CHROMOSOME_SEGREGATION": 11.281,
+    "MICROTUBULE_MITOSIS": 10.688,
+    "CELL_CYCLE": 7.5,
+    "APOPTOSIS": 2.5,
+    "DNA_REPLICATION_STRESS": 0.625
+  },
+  "ranking_method": {
+    "version": "v3",
+    "target_moa_first": true,
+    "evidence_terms_can_define_family": false,
+    "primary_axis_fallback": true,
+    "unknown_mechanism_penalized": true,
+    "score_is_heuristic": true,
+    "clinical_efficacy_claim": false
+  },
+  "candidate_counts": {
+    "ranked_total": 7423,
+    "repurposing_shortlist": 4,
+    "mechanistic_discovery_set": 12
+  },
+  "mechanism_family_counts": {
+    "MPS1_TTK_SAC": 7127,
+    "AURORA_PLK_MITOSIS": 42,
+    "MICROTUBULE_MITOSIS": 70,
+    "CHROMOSOME_SEGREGATION": 1,
+    "CELL_CYCLE": 84,
+    "APOPTOSIS": 52,
+    "DNA_REPAIR_REPLICATION": 47
+  },
+  "mechanism_confidence_counts": {
+    "HIGH": 36,
+    "MODERATE": 226,
+    "LOW": 7161
+  },
+  "approval_context_counts": {
+    "PRECLINICAL": 2345,
+    "PHASE_3": 545,
+    "PHASE_2": 999,
+    "PHASE_1": 643,
+    "LAUNCHED_DATASET": 2674,
+    "UNKNOWN_STATUS": 217
+  },
+  "top20": [
+    {
+      "rank": 1,
+      "name": "mps-bay-2a",
+      "mechanism_family": "MPS1_TTK_SAC",
+      "mechanism_confidence": "HIGH",
+      "mechanism_evidence_source": "TARGET",
+      "target": "TTK",
+      "moa": "monopolar spindle 1 kinase inhibitor",
+      "approval_context": "PRECLINICAL",
+      "final_score": 11.18
+    },
+    {
+      "rank": 2,
+      "name": "mps1-in-1",
+      "mechanism_family": "MPS1_TTK_SAC",
+      "mechanism_confidence": "HIGH",
+      "mechanism_evidence_source": "TARGET",
+      "target": "TTK",
+      "moa": "monopolar spindle 1 kinase inhibitor",
+      "approval_context": "PRECLINICAL",
+      "final_score": 11.18
+    },
+    {
+      "rank": 3,
+      "name": "tc-mps1-12",
+      "mechanism_family": "MPS1_TTK_SAC",
+      "mechanism_confidence": "HIGH",
+      "mechanism_evidence_source": "TARGET",
+      "target": "TTK",
+      "moa": "monopolar spindle 1 kinase inhibitor",
+      "approval_context": "PRECLINICAL",
+      "final_score": 11.18
+    },
+    {
+      "rank": 4,
+      "name": "mpi-0479605",
+      "mechanism_family": "MPS1_TTK_SAC",
+      "mechanism_confidence": "HIGH",
+      "mechanism_evidence_source": "TARGET",
+      "target": "TTK",
+      "moa": "mitotic kinase inhibitor",
+      "approval_context": "PRECLINICAL",
+      "final_score": 11.18
+    },
+    {
+      "rank": 5,
+      "name": "pyrazolanthrone",
+      "mechanism_family": "MPS1_TTK_SAC",
+      "mechanism_confidence": "HIGH",
+      "mechanism_evidence_source": "TARGET",
+      "target": "MAPK10, MAPK8, MAPK8IP1, MAPK9, TTK",
+      "moa": "jnk inhibitor",
+      "approval_context": "PRECLINICAL",
+      "final_score": 11.18
+    },
+    {
+      "rank": 6,
+      "name": "barasertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, AURKB",
+      "moa": "aurora kinase inhibitor",
+      "approval_context": "PHASE_3",
+      "final_score": 10.3375
+    },
+    {
+      "rank": 7,
+      "name": "alisertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA",
+      "moa": "aurora kinase inhibitor",
+      "approval_context": "PHASE_3",
+      "final_score": 10.3375
+    },
+    {
+      "rank": 8,
+      "name": "barasertib-hqpa",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKB",
+      "moa": "aurora kinase inhibitor",
+      "approval_context": "PHASE_3",
+      "final_score": 10.3375
+    },
+    {
+      "rank": 9,
+      "name": "volasertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "PLK1",
+      "moa": "plk inhibitor",
+      "approval_context": "PHASE_3",
+      "final_score": 10.3375
+    },
+    {
+      "rank": 10,
+      "name": "ilorasertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKC, KDR, VEGFA",
+      "moa": "aurora kinase inhibitor",
+      "approval_context": "PHASE_3",
+      "final_score": 10.3375
+    },
+    {
+      "rank": 11,
+      "name": "rigosertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "PLK1",
+      "moa": "plk inhibitor, cell cycle inhibitor",
+      "approval_context": "PHASE_3",
+      "final_score": 10.3375
+    },
+    {
+      "rank": 12,
+      "name": "at-9283",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, AURKB, JAK2, JAK3, RPS6KA6, STK17A",
+      "moa": "jak inhibitor, aurora kinase inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1775
+    },
+    {
+      "rank": 13,
+      "name": "danusertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, AURKB, AURKC, FGFR1, NTRK1, RET, SLK",
+      "moa": "growth factor receptor inhibitor, aurora kinase inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1775
+    },
+    {
+      "rank": 14,
+      "name": "tozasertib",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, AURKB, AURKC, LCK",
+      "moa": "jak inhibitor, flt3 inhibitor, aurora kinase inhibitor, bcr-abl kinase inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1775
+    },
+    {
+      "rank": 15,
+      "name": "enmd-2076",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, FLT3, KDR, PDGFRA, PTK2, SRC",
+      "moa": "flt3 inhibitor, aurora kinase inhibitor, vegfr inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1775
+    },
+    {
+      "rank": 16,
+      "name": "bi-2536",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "BRD4, PLK1, PLK2, PLK3",
+      "moa": "plk inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1775
+    },
+    {
+      "rank": 17,
+      "name": "nms-1286937",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "FLT3, PLK1, PLK2, PLK3",
+      "moa": "plk inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1775
+    },
+    {
+      "rank": 18,
+      "name": "ly3295668",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "",
+      "moa": "aurora kinase inhibitor",
+      "approval_context": "PHASE_2",
+      "final_score": 10.1475
+    },
+    {
+      "rank": 19,
+      "name": "amg900",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, AURKB, AURKC",
+      "moa": "aurora kinase inhibitor",
+      "approval_context": "PHASE_1",
+      "final_score": 10.0175
+    },
+    {
+      "rank": 20,
+      "name": "bi-847325",
+      "mechanism_family": "AURORA_PLK_MITOSIS",
+      "mechanism_confidence": "MODERATE",
+      "mechanism_evidence_source": "MOA",
+      "target": "AURKA, AURKB, AURKC, MAP2K1, MAP2K2",
+      "moa": "aurora kinase inhibitor, mek inhibitor",
+      "approval_context": "PHASE_1",
+      "final_score": 10.0175
+    }
+  ],
+  "limitations": [
+    "La entropía es una heurística de navegación/priorización.",
+    "El STOP_GAINED apoya una hipótesis de pérdida de función, pero no demuestra por sí solo causalidad clínica.",
+    "La variante missense no se asume patogénica.",
+    "No se asume compound heterozygosity sin evidencia de fase.",
+    "El ranking farmacológico no demuestra eficacia.",
+    "LAUNCHED_DATASET no se interpreta automáticamente como aprobación regulatoria vigente.",
+    "La clasificación mecanística v3 prioriza TARGET/MOA directos.",
+    "Los candidatos sin mecanismo directo reciben penalización.",
+    "Las hipótesis de combinación no implican sinergia."
+  ]
+}
